@@ -1,0 +1,15 @@
+MarginContainer
+Button
+HBoxContainer
+LineEdit
+VBoxContainer
+Label
+Window
+TextEdit
+Container
+BoxContainer
+ColorRect
+PanelContainer
+Camera2D
+Sprite2D
+AnimatedSprite2D

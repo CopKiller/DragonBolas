@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Pa2udEpTqlI=",
+  "success": true,
+  "projectFilePath": "/home/filipe/Downloads/serverbug/client/Client.csproj",
+  "expectedPackageFiles": [
+    "/home/filipe/.nuget/packages/godot.sourcegenerators/4.4.0-beta.1/godot.sourcegenerators.4.4.0-beta.1.nupkg.sha512",
+    "/home/filipe/.nuget/packages/godotsharp/4.4.0-beta.1/godotsharp.4.4.0-beta.1.nupkg.sha512",
+    "/home/filipe/.nuget/packages/godotsharpeditor/4.4.0-beta.1/godotsharpeditor.4.4.0-beta.1.nupkg.sha512"
+  ],
+  "logs": []
+}

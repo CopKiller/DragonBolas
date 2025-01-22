@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client.csproj", "{629EB8A3-4B54-4CC5-8A2C-C1CA54070C8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "..\Server\Server.csproj", "{8B870539-AE3F-4D51-9C5A-3AF5F6616875}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F8146620-001A-4E14-A8AC-DC2529C4524D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{507D226D-EFC6-4E51-801C-F11A9282BEB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{3E158323-54FF-4DCC-8871-2B3E5E3C7D91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{3D0754EE-C9EB-4FD3-AA90-9EA0F2F9F4CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Network.Packet", "..\Core\Core.Network.Packet\Core.Network.Packet.csproj", "{5B74B059-0383-41C3-88A6-3394936A0DE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiteNetLib", "..\External\LiteNetLib\LiteNetLib\LiteNetLib.csproj", "{514658C1-28B9-411A-AE83-9F64A29E007A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		ExportDebug|Any CPU = ExportDebug|Any CPU
+		ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{629EB8A3-4B54-4CC5-8A2C-C1CA54070C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{629EB8A3-4B54-4CC5-8A2C-C1CA54070C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{629EB8A3-4B54-4CC5-8A2C-C1CA54070C8E}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{629EB8A3-4B54-4CC5-8A2C-C1CA54070C8E}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{629EB8A3-4B54-4CC5-8A2C-C1CA54070C8E}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{629EB8A3-4B54-4CC5-8A2C-C1CA54070C8E}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{8B870539-AE3F-4D51-9C5A-3AF5F6616875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B870539-AE3F-4D51-9C5A-3AF5F6616875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B870539-AE3F-4D51-9C5A-3AF5F6616875}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B870539-AE3F-4D51-9C5A-3AF5F6616875}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
+		{8B870539-AE3F-4D51-9C5A-3AF5F6616875}.ExportRelease|Any CPU.ActiveCfg = Release|Any CPU
+		{8B870539-AE3F-4D51-9C5A-3AF5F6616875}.ExportRelease|Any CPU.Build.0 = Release|Any CPU
+		{5B74B059-0383-41C3-88A6-3394936A0DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B74B059-0383-41C3-88A6-3394936A0DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B74B059-0383-41C3-88A6-3394936A0DE2}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B74B059-0383-41C3-88A6-3394936A0DE2}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
+		{5B74B059-0383-41C3-88A6-3394936A0DE2}.ExportRelease|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B74B059-0383-41C3-88A6-3394936A0DE2}.ExportRelease|Any CPU.Build.0 = Debug|Any CPU
+		{514658C1-28B9-411A-AE83-9F64A29E007A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{514658C1-28B9-411A-AE83-9F64A29E007A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{514658C1-28B9-411A-AE83-9F64A29E007A}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{514658C1-28B9-411A-AE83-9F64A29E007A}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
+		{514658C1-28B9-411A-AE83-9F64A29E007A}.ExportRelease|Any CPU.ActiveCfg = Debug|Any CPU
+		{514658C1-28B9-411A-AE83-9F64A29E007A}.ExportRelease|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{629EB8A3-4B54-4CC5-8A2C-C1CA54070C8E} = {507D226D-EFC6-4E51-801C-F11A9282BEB9}
+		{8B870539-AE3F-4D51-9C5A-3AF5F6616875} = {3E158323-54FF-4DCC-8871-2B3E5E3C7D91}
+		{5B74B059-0383-41C3-88A6-3394936A0DE2} = {F8146620-001A-4E14-A8AC-DC2529C4524D}
+		{514658C1-28B9-411A-AE83-9F64A29E007A} = {3D0754EE-C9EB-4FD3-AA90-9EA0F2F9F4CA}
+	EndGlobalSection
+EndGlobal

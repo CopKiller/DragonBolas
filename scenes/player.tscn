@@ -1,0 +1,108 @@
+[gd_scene load_steps=13 format=3 uid="uid://b0j0ao3638ch7"]
+
+[ext_resource type="Texture2D" uid="uid://dhvmlcwoldpw4" path="res://resources/1.png" id="1_eq6hw"]
+[ext_resource type="Script" uid="uid://ctnuwixgyrc42" path="res://scripts/Player.cs" id="1_n2n83"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mhgrl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_df28u"]
+atlas = ExtResource("1_eq6hw")
+region = Rect2(32, 0, 32, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pguvr"]
+atlas = ExtResource("1_eq6hw")
+region = Rect2(64, 0, 32, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_djf4e"]
+atlas = ExtResource("1_eq6hw")
+region = Rect2(32, 31, 32, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tmc4l"]
+atlas = ExtResource("1_eq6hw")
+region = Rect2(64, 31, 32, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_21fei"]
+atlas = ExtResource("1_eq6hw")
+region = Rect2(32, 62, 32, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rhpv1"]
+atlas = ExtResource("1_eq6hw")
+region = Rect2(64, 62, 32, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xou3"]
+atlas = ExtResource("1_eq6hw")
+region = Rect2(32, 93, 32, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s20xt"]
+atlas = ExtResource("1_eq6hw")
+region = Rect2(64, 93, 32, 31)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mkckc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_df28u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pguvr")
+}],
+"loop": true,
+"name": &"dir_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_djf4e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tmc4l")
+}],
+"loop": true,
+"name": &"dir_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_21fei")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rhpv1")
+}],
+"loop": true,
+"name": &"dir_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0xou3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s20xt")
+}],
+"loop": true,
+"name": &"dir_up",
+"speed": 5.0
+}]
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(559, 489)
+script = ExtResource("1_n2n83")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_mhgrl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mkckc")
+animation = &"dir_left"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_left = -27.0
+offset_top = -40.0
+offset_right = 26.0
+offset_bottom = -17.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "TzRaro"

@@ -1,0 +1,17 @@
+fc8a56933c4b1c8d796fdb8f7a9f9475
+::res://::1737511079
+export_presets.cfg::TextFile::-1::1737482814::0::1::::<><><><>::
+icon.svg::CompressedTexture2D::3100507030954100683::1737414880::1737414884::1::::<><><>a1f90373e85637db8b9192e3ee46325b<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://resources/::1737485258
+1.png::CompressedTexture2D::7694684276710265677::1718496516::1737419700::1::::<><><>660bd681202cb51012d01d209f860f17<>res://.godot/imported/1.png-71e0668f9d78afc7678c107801f4f289.ctex::
+map.png::CompressedTexture2D::8700740649836230730::1737474286::1737474302::1::::<><><>26c0b1ab1138c5c1e5e37fc05804d2e8<>res://.godot/imported/map.png-2658106e64d88e70d87e831c4dba654c.ctex::
+::res://scenes/::1737485258
+game.tscn::PackedScene::978537134806365778::1737485212::0::1::::<><><><>::res://scripts/Game.cs<>uid://b0j0ao3638ch7::::res://scenes/player.tscn<>uid://dv7x6r768jihe::::res://resources/map.png
+menu.tscn::PackedScene::5558056054156056717::1737485212::0::1::::<><><><>::res://scripts/Menu.cs
+player.tscn::PackedScene::4161239879278251070::1737485212::0::1::::<><><><>::uid://dhvmlcwoldpw4::::res://resources/1.png<>res://scripts/Player.cs
+::res://scripts/::1737485258
+Game.cs::CSharpScript::9011966574182795205::1737485208::0::1::::<>Node2D<><><>::
+Menu.cs::CSharpScript::7260281258219032992::1737484698::0::1::::<>Control<><><>::
+Player.cs::CSharpScript::6134520390655490309::1737484928::0::1::::<>CharacterBody2D<><><>::
+::res://scripts/Network/::1737485258
+ClientNetwork.cs::CSharpScript::5568478895993812988::1737485200::0::1::::<>Node<><><>::
