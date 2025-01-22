@@ -1,0 +1,16 @@
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/bin/Debug/net8.0/Core.Network.Packet.deps.json
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/bin/Debug/net8.0/Core.Network.Packet.dll
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/bin/Debug/net8.0/Core.Network.Packet.pdb
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/bin/Debug/net8.0/LiteNetLib.dll
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/bin/Debug/net8.0/LiteNetLib.pdb
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/bin/Debug/net8.0/LiteNetLib.xml
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.csproj.AssemblyReference.cache
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.GeneratedMSBuildEditorConfig.editorconfig
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.AssemblyInfoInputs.cache
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.AssemblyInfo.cs
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.csproj.CoreCompileInputs.cache
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/obj/Debug/net8.0/Core.Net.824D4FB8.Up2Date
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.dll
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/obj/Debug/net8.0/refint/Core.Network.Packet.dll
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.pdb
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/obj/Debug/net8.0/ref/Core.Network.Packet.dll
