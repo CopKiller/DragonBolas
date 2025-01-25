@@ -38,3 +38,4 @@ C:/Users/TzRaro/Documents/Server/obj/Debug/net8.0/ref/Server.dll
 /home/filipe/Downloads/serverbug/Server/obj/Debug/net8.0/ref/Server.dll
 /home/filipe/Downloads/serverbug/Server/bin/Debug/net8.0/Core.Network.Packet.dll
 /home/filipe/Downloads/serverbug/Server/bin/Debug/net8.0/Core.Network.Packet.pdb
+/home/filipe/Downloads/serverbug/Server/obj/Debug/net8.0/Server.sourcelink.json

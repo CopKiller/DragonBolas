@@ -1,10 +1,14 @@
-﻿using Core.Network.Packet;
+﻿using System.Threading;
+using Client.scripts.Extensions;
+using Client.scripts.Network;
+using Core.Network.Packet.Client;
 using Core.Network.Packet.CustomData;
+using Core.Network.Packet.Server;
 using Godot;
 using LiteNetLib;
 using LiteNetLib.Utils;
 
-namespace Client.scripts.Network;
+namespace Client.scripts.Singletons;
 public partial class ClientNetwork : Node
 {
     [Signal]
@@ -27,7 +31,7 @@ public partial class ClientNetwork : Node
         // Register packet processor
         _packetProcessor = new NetPacketProcessor();
         // Register server packet receiver
-        _serverPacketReceiver = new ReceiveServerPacket();
+        _serverPacketReceiver = new ReceiveServerPacket(this.GetSingleton<PlayerManager>());
         
         RegisterEvents();
         
@@ -36,13 +40,20 @@ public partial class ClientNetwork : Node
         RegisterPackets();
 
         StartNetwork();
+    }
 
+    public void ConnectToServer()
+    {
         ConnectToServer("localhost", 9050, "kakaka");
     }
 
     private void RegisterPackets()
     {
-        _packetProcessor.SubscribeReusable<PacketServerToClient, NetPeer>( (packet, peer) =>
+        _packetProcessor.SubscribeReusable<SPlayerInGame, NetPeer>( (packet, peer) =>
+        {
+            _serverPacketReceiver.Process(packet, peer);
+        });
+        _packetProcessor.SubscribeReusable<SPlayerMove, NetPeer>( (packet, peer) =>
         {
             _serverPacketReceiver.Process(packet, peer);
         });
@@ -51,6 +62,7 @@ public partial class ClientNetwork : Node
     private void RegisterCustomTypes()
     {
         _packetProcessor.RegisterNestedType<PlayerData>(() => new PlayerData());
+        _packetProcessor.RegisterNestedType<Position>();
     }
     
     private void RegisterEvents()
@@ -97,5 +109,10 @@ public partial class ClientNetwork : Node
     private void NetworkEvent_DataReceive(NetPeer peer, NetPacketReader reader, byte channel, DeliveryMethod deliveryMethod)
     {
         _packetProcessor.ReadAllPackets(reader, peer);
+    }
+    
+    public override void _ExitTree()
+    {
+        _serverPeer?.Disconnect();
     }
 }

@@ -7,9 +7,89 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c351bc6-2a16-4129-ba53-a6f2dff40372" name="Changes" comment="All Project">
+    <list default="true" id="3c351bc6-2a16-4129-ba53-a6f2dff40372" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/Client/CPlayerMove.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/CustomData/Position.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/Server/SPlayerInGame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/Server/SPlayerMove.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/Singletons/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Core/Core.Network.Packet/CustomData/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/CustomData/PlayerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Core/Core.Network.Packet/PacketClientToServer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Core/Core.Network.Packet/PacketServerToClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Core/Core.Network.Packet/bin/Debug/net8.0/Core.Network.Packet.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/bin/Debug/net8.0/Core.Network.Packet.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Core/Core.Network.Packet/bin/Debug/net8.0/Core.Network.Packet.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/bin/Debug/net8.0/Core.Network.Packet.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/ref/Core.Network.Packet.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/ref/Core.Network.Packet.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/refint/Core.Network.Packet.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/Debug/net8.0/refint/Core.Network.Packet.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Core/Core.Network.Packet/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../External/LiteNetLib" beforeDir="false" afterPath="$PROJECT_DIR$/../External/LiteNetLib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../External/LiteNetLib/.github/FUNDING.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../External/LiteNetLib/.github/issue_template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/NetworkManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/Packet/ReceiveClientPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Packet/ReceiveClientPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/bin/Debug/net8.0/Core.Network.Packet.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/bin/Debug/net8.0/Core.Network.Packet.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/bin/Debug/net8.0/Core.Network.Packet.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/bin/Debug/net8.0/Core.Network.Packet.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/bin/Debug/net8.0/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/bin/Debug/net8.0/Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/bin/Debug/net8.0/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/bin/Debug/net8.0/Server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/Server.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/Server.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/Server.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/Server.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/Server.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/Server.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/Server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/Server.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/Server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/ref/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/ref/Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/refint/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net8.0/refint/Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/create_recent.Node" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/create_recent.Node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_update4" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_update4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/game.tscn-editstate-c2a7af834e91ff64325daddf58e45dc0.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/game.tscn-editstate-c2a7af834e91ff64325daddf58e45dc0.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/game.tscn-folding-c2a7af834e91ff64325daddf58e45dc0.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/game.tscn-folding-c2a7af834e91ff64325daddf58e45dc0.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/menu.tscn-editstate-1ce5c86e8ca186dcaaeaa8726f1268db.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/menu.tscn-editstate-1ce5c86e8ca186dcaaeaa8726f1268db.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/player.tscn-editstate-234fb6894ec6226e856ab7f825500d3d.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/player.tscn-editstate-234fb6894ec6226e856ab7f825500d3d.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/player.tscn-folding-234fb6894ec6226e856ab7f825500d3d.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/player.tscn-folding-234fb6894ec6226e856ab7f825500d3d.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/recent_dirs" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/recent_dirs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/export_credentials.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/export_credentials.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/exported/133200997/export-c2a7af834e91ff64325daddf58e45dc0-game.scn" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/exported/133200997/export-c2a7af834e91ff64325daddf58e45dc0-game.scn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/exported/133200997/file_cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/exported/133200997/file_cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Core.Network.Packet.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Core.Network.Packet.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Core.Network.Packet.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Core.Network.Packet.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Client.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Client.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Client.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Client.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Client.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Client.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Client.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Client.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Client.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Client.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/uid_cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/uid_cache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Client/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Client.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_presets.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/export_presets.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/game.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/game.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/player.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Game.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Network/ClientNetwork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Singletons/ClientNetwork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Network/ReceiveServerPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Network/ReceiveServerPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +100,7 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -28,14 +108,21 @@
     &quot;assignee&quot;: &quot;CopKiller&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/CopKiller/DragonBolas.git",
-    "accountId": "b712c3b2-f3a8-474e-bb98-0862abb7018d"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/CopKiller/DragonBolas.git&quot;,
+    &quot;accountId&quot;: &quot;b712c3b2-f3a8-474e-bb98-0862abb7018d&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/scripts/Network/ClientNetwork.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c60205f344bd48048d71cd7bb1a0bdd0b2dc00/25/7edcd9f8/Vector2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c60205f344bd48048d71cd7bb1a0bdd0b2dc00/2e/de6b2aa6/ValueType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c60205f344bd48048d71cd7bb1a0bdd0b2dc00/7e/9602b67a/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dac6f286588c4849b523ce1dd804fe69d1bc00/9e/0d02e343/CastHelpers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bba0bbd7a98ee58286e9484fbe86e01afff6232283f6efd3556eb7116453/CharacterBody2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Core/Core.Network.Packet/obj/ExportDebug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/filipe/Downloads/serverbug/client/.godot/mono/temp/obj/Debug/Client.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.godot/mono/temp/obj/ExportDebug/linux-x64/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -50,7 +137,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Executable.Player.executor": "Debug",
+    ".NET Executable.Player.executor": "Run",
     ".NET Project.Server.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -131,6 +218,11 @@
       <updated>1737511010183</updated>
       <workItem from="1737511016846" duration="33000" />
       <workItem from="1737511144857" duration="8261000" />
+      <workItem from="1737588022542" duration="215000" />
+      <workItem from="1737595175876" duration="7353000" />
+      <workItem from="1737762018635" duration="8586000" />
+      <workItem from="1737771018800" duration="2392000" />
+      <workItem from="1737773669163" duration="1100000" />
     </task>
     <servers />
   </component>
@@ -139,8 +231,42 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../Core/LiteNetLib" />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/scripts/Network/ReceiveServerPacket.cs</url>
+          <line>29</line>
+          <properties documentPath="$PROJECT_DIR$/scripts/Network/ReceiveServerPacket.cs" containingFunctionPresentation="Method 'Process'">
+            <startOffsets>
+              <option value="848" />
+            </startOffsets>
+            <endOffsets>
+              <option value="886" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

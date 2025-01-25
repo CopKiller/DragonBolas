@@ -1,87 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://n7ammmw3igle"]
+[gd_scene load_steps=3 format=3 uid="uid://n7ammmw3igle"]
 
 [ext_resource type="Script" uid="uid://d1np1jmuqyj0p" path="res://scripts/Game.cs" id="1_cw6la"]
-[ext_resource type="PackedScene" uid="uid://b0j0ao3638ch7" path="res://scenes/player.tscn" id="1_d2urf"]
 [ext_resource type="Texture2D" uid="uid://dv7x6r768jihe" path="res://resources/map.png" id="2_te1j2"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nmjt3"]
-size = Vector2(1157, 14.5)
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_cw6la")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(399.113, 296)
+position = Vector2(400.113, 296)
 scale = Vector2(0.910904, 0.808187)
 texture = ExtResource("2_te1j2")
 
-[node name="Player" parent="." instance=ExtResource("1_d2urf")]
-position = Vector2(399, 300)
+[node name="Players" type="Node2D" parent="."]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(451, 596)
-shape = SubResource("RectangleShape2D_nmjt3")
-
-[node name="SendPacketWindow" type="Window" parent="."]
-title = "Enviar Pacote Teste"
-initial_position = 1
-size = Vector2i(200, 150)
-
-[node name="MarginContainer" type="MarginContainer" parent="SendPacketWindow"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 5
-theme_override_constants/margin_top = 5
-theme_override_constants/margin_right = 5
-theme_override_constants/margin_bottom = 5
-
-[node name="VBoxContainer" type="VBoxContainer" parent="SendPacketWindow/MarginContainer"]
-layout_mode = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="SendPacketWindow/MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="IdLabel" type="Label" parent="SendPacketWindow/MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-text = "ID:"
-
-[node name="IdLineEdit" type="LineEdit" parent="SendPacketWindow/MarginContainer/VBoxContainer/HBoxContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="SendPacketWindow/MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="NameLabel" type="Label" parent="SendPacketWindow/MarginContainer/VBoxContainer/HBoxContainer2"]
-layout_mode = 2
-text = "Name:"
-
-[node name="NameLineEdit" type="LineEdit" parent="SendPacketWindow/MarginContainer/VBoxContainer/HBoxContainer2"]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="HBoxContainer3" type="HBoxContainer" parent="SendPacketWindow/MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="MessageLabel" type="Label" parent="SendPacketWindow/MarginContainer/VBoxContainer/HBoxContainer3"]
-layout_mode = 2
-text = "Message:"
-
-[node name="MessageLineEdit" type="LineEdit" parent="SendPacketWindow/MarginContainer/VBoxContainer/HBoxContainer3"]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="SendButton" type="Button" parent="SendPacketWindow/MarginContainer/VBoxContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-text = "Send Packet"
-
-[connection signal="pressed" from="SendPacketWindow/MarginContainer/VBoxContainer/SendButton" to="." method="OnSendButtonPressed"]
+[node name="PingLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Ping: ???"

@@ -1,6 +1,8 @@
 using System.Diagnostics;
 using Core.Network.Packet;
+using Core.Network.Packet.Client;
 using Core.Network.Packet.CustomData;
+using Core.Network.Packet.Server;
 using LiteNetLib;
 using LiteNetLib.Utils;
 using Server.Packet;
@@ -19,6 +21,8 @@ public class NetworkManager
     private Thread? _networkThread;
     private bool _isUpdateRunning;
     
+    private readonly List<NetPeer> _peers = [];
+    
     public NetworkManager()
     {
         // Register network events
@@ -28,7 +32,7 @@ public class NetworkManager
         // Register packet processor
         _packetProcessor = new NetPacketProcessor();
         // Register server packet receiver
-        _receiveClientPacket = new ReceiveClientPacket();
+        _receiveClientPacket = new ReceiveClientPacket(_packetProcessor, _netManager);
     }
 
     public void Register()
@@ -41,11 +45,13 @@ public class NetworkManager
     private void RegisterCustomTypes()
     {
         _packetProcessor.RegisterNestedType<PlayerData>(() => new PlayerData());
+        _packetProcessor.RegisterNestedType<Position>();
     }
 
     private void RegisterPackets()
     {
-        _packetProcessor.SubscribeReusable<PacketClientToServer, NetPeer>( (packet, peer) =>
+        
+        _packetProcessor.SubscribeReusable<CPlayerMove, NetPeer>( (packet, peer) =>
         {
             _receiveClientPacket.Process(packet, peer);
         });
@@ -57,6 +63,7 @@ public class NetworkManager
         _networkEvent.NetworkReceiveEvent += NetworkEvent_DataReceive;
         _networkEvent.ConnectionRequestEvent += NetworkEvent_ConnectionRequest;
         _networkEvent.PeerConnectedEvent += NetworkEvent_ConnectionAccept;
+        _networkEvent.PeerDisconnectedEvent += NetworkEvent_PeerDisconnected;
     }
     
     public void StartNetwork(int port)
@@ -82,38 +89,27 @@ public class NetworkManager
         request.AcceptIfKey("kakaka");
     }
     
+    private void NetworkEvent_PeerDisconnected(NetPeer peer, DisconnectInfo disconnectInfo)
+    {
+        Console.WriteLine($"Client disconnected: {peer.Address}");
+    }
+    
     private void NetworkEvent_ConnectionAccept(NetPeer peer)
     {
         Console.WriteLine($"Client connected: {peer.Address}");
         
+        _netManager.GetPeersNonAlloc(_peers, ConnectionState.Connected);
+
+        var inGamePacket = new SPlayerInGame();
         
-        PacketServerToClient packet = new()
+        inGamePacket.Players.AddRange(_peers.Select(newPeer => new PlayerData
         {
-            PlayerDataList =
-            [
-                new PlayerData()
-                {
-                    Id = 1,
-                    Name = "Player 1"
-                },
-
-                new PlayerData()
-                {
-                    Id = 2,
-                    Name = "Player 2",
-                },
-
-                new PlayerData()
-                {
-                    Id = 3,
-                    Name = "Player 3",
-                }
-            ]
-        };
+            Index = newPeer.Id
+        }));
         
         var writer = new NetDataWriter();
-        _packetProcessor.Write(writer, packet);
-        peer.Send(writer, DeliveryMethod.ReliableOrdered);
+        _packetProcessor.Write(writer, inGamePacket);
+        _netManager.SendToAll(writer, DeliveryMethod.ReliableOrdered);
     }
 
     private void NetworkEvent_LatencyUpdate(NetPeer peer, int latency)

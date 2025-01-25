@@ -1,7 +1,3 @@
+res://scenes/Player.tscn
 res://scenes/game.tscn
-res://scenes/player.tscn
 res://scenes/menu.tscn
-res://scripts/Game.cs
-res://scripts/Network/ClientNetwork.cs
-res://scripts/Player.cs
-res://scripts/Menu.cs

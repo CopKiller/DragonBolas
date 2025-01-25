@@ -40,3 +40,4 @@ C:/Users/TzRaro/Documents/client/.godot/mono/temp/bin/Debug/LiteNetLib.xml
 /home/filipe/Downloads/serverbug/client/.godot/mono/temp/obj/Debug/ref/Client.dll
 /home/filipe/Downloads/serverbug/client/.godot/mono/temp/bin/Debug/Core.Network.Packet.dll
 /home/filipe/Downloads/serverbug/client/.godot/mono/temp/bin/Debug/Core.Network.Packet.pdb
+/home/filipe/Downloads/serverbug/client/.godot/mono/temp/obj/Debug/Client.sourcelink.json

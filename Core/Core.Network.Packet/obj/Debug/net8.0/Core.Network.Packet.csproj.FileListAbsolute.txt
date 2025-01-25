@@ -14,3 +14,4 @@
 /home/filipe/Downloads/serverbug/Core/Core.Network.Packet/obj/Debug/net8.0/refint/Core.Network.Packet.dll
 /home/filipe/Downloads/serverbug/Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.pdb
 /home/filipe/Downloads/serverbug/Core/Core.Network.Packet/obj/Debug/net8.0/ref/Core.Network.Packet.dll
+/home/filipe/Downloads/serverbug/Core/Core.Network.Packet/obj/Debug/net8.0/Core.Network.Packet.sourcelink.json

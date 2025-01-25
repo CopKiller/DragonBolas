@@ -1,14 +1,28 @@
 using Core.Network.Packet;
+using Core.Network.Packet.Client;
+using Core.Network.Packet.Server;
 using LiteNetLib;
+using LiteNetLib.Utils;
 
 namespace Server.Packet;
 
-public class ReceiveClientPacket
+public class ReceiveClientPacket(NetPacketProcessor packetProcessor, NetManager netManager)
 {
-    public void Process(PacketClientToServer packet, NetPeer peer)
+    private readonly NetDataWriter _dataWriter = new();
+    
+    public void Process(CPlayerMove packet, NetPeer peer)
     {
-        Console.WriteLine($"Server: Recebido pacote ID:{packet.Id}");
-        Console.WriteLine($"Server: Recebido pacote Name:{packet.Name}");
-        Console.WriteLine($"Server: Recebido pacote Message:{packet.Message}");
+        // Enviar o pacote de volta pra todos os jogadores sincronizar a posição deste jogador.
+        _dataWriter.Reset();
+        
+        var serverPlayerMove = new SPlayerMove
+        {
+            Index = peer.Id,
+            Position = packet.Position
+        };
+        
+        packetProcessor.Write(_dataWriter, serverPlayerMove);
+        
+        netManager.SendToAll(_dataWriter, DeliveryMethod.ReliableOrdered, peer);
     }
 }
